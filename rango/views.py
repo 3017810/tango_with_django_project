@@ -10,5 +10,3 @@ def about(request):
     return render(request, "rango/about.html", context=context_dict)
 
 
-
-

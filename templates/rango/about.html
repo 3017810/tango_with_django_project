@@ -2,13 +2,18 @@
 {% load static %}
 
 <html>
-<head>
+    <head>
     <title>About</title>
     <style>
         body {
             background-color: darkslategrey;
             color: white;
             font-family: Arial, sans-serif;
+        }
+        .images{
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
         }
     </style>
 </head>
@@ -19,14 +24,12 @@
         <strong>{{ boldmessage }}</strong>
     </div>
     <div>
-        <h3> <a href="/rango/">Index</a></h3>
+        <h3><a href="/rango/">Index</a></h3>
     </div>
-    <div>
+    <div class="images">
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
-    </div>
-    <br><br>
-    <div>
         <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
     </div>
+
 </body>
 </html>
